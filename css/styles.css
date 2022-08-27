@@ -148,6 +148,9 @@ button{
     text-align: center;
     background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+    background-position: center;
+    background-size: 1600px 600px;    
+    background-repeat: no-repeat;
 }
 
 .hero-title{
@@ -213,13 +216,16 @@ button{
 }
 
 .advantage-icon-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+
     background-color: var(--secondary-background-color);
     color: var(--secondary-font-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .advantage-icon{
@@ -268,31 +274,6 @@ button{
     padding-bottom: 30px;
 }
 
-.advantage-icon-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-}
-
-.advantage-icon{
-    width: 20px;
-    height: 20px;
-    fill: var(--icon-color);
-}
-
-.advantage-icon-link:hover,
-.advantage-icon-link:focus{
-    background-color: var(--accent-font-color);
-}
-
-.advantage-icon-link:hover .advantage-icon,
-.advantage-icon-link:focus .advantage-icon {
-    fill: var(--alternative-accent-color);
-}
-
 /*------------------------- Do ----------------------*/
 
 .do{
@@ -337,8 +318,40 @@ button{
     gap: 30px;
 }
 
+.team-list-item {
+    width: 44px;
+    height: 44px;
+}
+
 .team-item{
     background-color: var(--main-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.team-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+}
+
+.team-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: var(--accent-font-color);
+}
+
+.team-icon-link:hover .team-icon,
+.team-icon-link:focus .team-icon {
+    fill: var(--alternative-accent-color);
 }
 
 .item-text{
@@ -360,12 +373,18 @@ button{
     gap: 30px;
 }
 
+.clients-list-item{
+    width: 170px;
+    height: 92px;
+}
+
 .clients-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
+
     border-color: var(--icon-color) ;
     border-width: 1px;
     border-style: solid;
@@ -376,6 +395,7 @@ button{
 .clients-icon{
     width: 106px;
     height: 60px;
+
     fill: currentColor;
 }
 
@@ -412,6 +432,7 @@ button{
 
 .footer-container{
     display: flex;
+    align-items: baseline;
     gap: 70px;
 }
 
@@ -439,12 +460,17 @@ address li:not(:last-child){
     line-height: 1.17;
 }
 
+.footer-list-item{
+    width: 44px;
+    height: 44px;
+}
+
 .footer-icon-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
 
     border-radius: 50%;
     background-color: rgba(0,0,0,0.1);
@@ -519,7 +545,8 @@ address li:not(:last-child){
     gap: 30px;
 }
 
-.portfolio-link{
+.portfolio-link:hover,
+.portfolio-link:focus{
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
