@@ -129,6 +129,11 @@ button{
     color: inherit;
 }
 
+.header-icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
 .active{
     color: var(--accent-font-color);
 }
