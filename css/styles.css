@@ -145,6 +145,8 @@ button{
 
 .hero{
     text-align: center;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
 }
 
 .hero-title{
@@ -209,6 +211,22 @@ button{
     line-height: 1.17;
 }
 
+.advantage-icon-bg{
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-font-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+
+.advantage-icon{
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+
 .advantage-list{
     display: flex;
 
@@ -239,6 +257,39 @@ button{
 
 .advantage-item:not(:last-child){
     margin-right: 30px;
+}
+
+.social-links{
+    display: flex;
+    gap: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+}
+
+.advantage-icon-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.advantage-icon{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.advantage-icon-link:hover,
+.advantage-icon-link:focus{
+    background-color: var(--accent-font-color);
+}
+
+.advantage-icon-link:hover .advantage-icon,
+.advantage-icon-link:focus .advantage-icon {
+    fill: var(--alternative-accent-color);
 }
 
 /*------------------------- Do ----------------------*/
